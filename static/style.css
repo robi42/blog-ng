@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+}
+
+p {
+  margin-bottom: 1.2em;
+}
+
+a:hover {
+  background-color: #0000EF;
+  color: #FFF;
+  text-decoration: none;
+}
+
+a img {
+  border: 0;
+}
+
+input, textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  line-height: 1.2em;
+  padding: 3px;
+  border: 1px solid #CCC;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #000;
+}
+
+input.submit {
+  font-weight: bold;
+}
+
+#message {
+  background-color: #000080;
+  color: #FFF;
+  padding: 4px 10px 4px 30px;
+  margin: 1em 0;
+}
+
+#header {
+  border-bottom: 1px dotted #808080;
+}
+
+#logo {
+  float: left;
+}
+
+#heading {
+  margin: 0 0 2.25em 4em;
+}
+
+#heading h1 {
+  padding-top: 0.4em;
+}
+
+#footer {
+  text-align: center;
+  padding-top: 0.8em;
+  padding-bottom: 0.4em;
+  border-top: 1px dotted #808080;
+}
+
+#main-user-tasks {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#add-comment-container  {
+  width: 40%;
+  min-width: 1000px;
+}
+
+#wmd-container {
+  width: 80%;
+  min-width: 1000px;
+}
+
+#wmd-left-container, #wmd-right-container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#wmd-left-container {
+  float: left;
+  width: 50%;
+  z-index: 1; /* put textarea in front, in case Safari users resize it */
+}
+
+#wmd-right-container {
+  float: right;
+  width: 50%;
+  margin-top: 1.1em;
+}
+
+#wmd-right-container-heading {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+}
+
+#wmd-label, #add-comment-label {
+  float: left;
+}
+
+#wmd-toggle-container {
+  float: right;
+  margin-right: 1.2em;
+}
+
+#add-comment-toggle-container {
+  float: right;
+  margin-right: 31.5em;
+}
+
+.wmd-preview {
+  overflow: auto;
+  background-color: #EEE;
+  height: 345px;
+  padding: 0.5em 2em 1em 2em;
+}
+
+#to-toggle {
+  width: 475px;
+  border: 1px solid #000;
+  background-color: #B0C4DE;
+  padding: 4px 10px 4px 10px;
+}
+
+#pagination {
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+#articles, #main-content {
+  width: 70%;
+  margin: auto;
+}
+
+#main-content {
+  margin-top: 1.7em;
+  margin-bottom: 2em;
+}
+
+.article-list-item, #article-content {
+  background-color: #EEE;
+  padding: 0.5em 2em 1em 2em;
+  margin-bottom: 2em;
+}
+
+.article-heading-container {
+  height: 2.5em;
+}
+
+.article-heading {
+  float: left;
+}
+
+.article-meta-container {
+  float: right;
+  margin: 1em 0.5em 0.5em 1em;
+  padding: 1em;
+  background-color: #DDD;
+}
+
+.article-text {
+  margin-top: 1.2em;
+  margin-bottom: 1em;
+}
+
+#article-content {
+  min-height: 110px;
+}

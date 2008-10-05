@@ -1,0 +1,58 @@
+<% extends '../base.html' %>
+
+<% subskin 'content' %>
+  <div id="heading">
+    <h1>Welcome to Hibernate Blog NG! ^^</h1>
+  </div>
+</div>
+
+<div id="main-user-tasks">
+  <% loginLink %>
+  <% registerLink %>
+  <% createArticleLink %>
+  <% logoutLink %>
+</div>
+
+<div id="articles">
+  <% listArticles %>
+  <% pagination %>
+</div>
+
+<% subskin 'loginLink' %>
+<strong><a href="/account/login">&raquo; Login</a>&nbsp;&nbsp;|&nbsp;
+
+<% subskin 'registerLink' %>
+<a href="/account/register">&raquo; Register</a></strong>
+
+<% subskin 'createArticleLink' %>
+<strong><a href="create">&raquo; Create a new article</a>&nbsp;&nbsp;|&nbsp;</strong>
+
+<% subskin 'logoutLink' %>
+<strong><a href="/account/logout">&raquo; Logout <small><em><% sessionUserName %></em></small></a></strong>
+
+<% subskin 'articleListItem' %>
+<div class="article-list-item">
+
+  <div class="article-heading-container">
+    <h2 class="article-heading">
+      <a href="show?id=<% id %>"><% title %></a>
+    </h2>
+
+    <p class="article-meta-container">
+      <small>
+        <strong><% creatorName %></strong> @ <strong><% formattedCreateTime %></strong><br />
+        <a href="show?id=<% id %>#comments"><% commentsCountMsg %></a>
+      </small>
+    </p>
+  </div>
+
+  <div class="article-text">
+    <% teaserText %>
+  </div>
+</div>
+
+<% subskin 'previousPageLink' %>
+<strong style="float: left;"><a href="?first=<% firstItem %>">&larr; Newer</a>&nbsp;</strong>
+
+<% subskin 'nextPageLink' %>
+<strong style="float: right;"><a href="?first=<% firstItem %>">Older &rarr;</a></strong>

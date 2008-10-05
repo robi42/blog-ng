@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hibernate Blog NG - <% path %></title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png" />
+    <link rel="alternate" type="application/atom+xml" title="Articles Feed" href="/articles/atom.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Comments Feed" href="/comments/atom.xml" />
+    <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" title="Style CSS" href="/static/style.css" />
+    <% render 'headScripts' %>
+  </head>
+
+  <body>
+    <% message | wrap '<div id="message">' '</div>' %>
+    <div id="header">
+      <div id="logo">
+        <a href="/" title="Home"><img src="/static/logo.png" alt="Home" /></a>
+      </div>
+      <% render 'content' %>
+
+    <div id="footer">
+      <a href="http://dev.helma.org/ng" title="powered by Helma NG"><img src="/static/helma.png" alt="powered by Helma NG" /></a>
+    </div>
+
+    <% render 'wmdScript' %>
+  </body>
+</html>
