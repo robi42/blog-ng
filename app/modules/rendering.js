@@ -72,9 +72,8 @@ function renderPagination(skin, data) {
 }
 
 
-function renderSub(res, macrotag, skin, condition, context) {
+function renderSub(macrotag, skin, condition, context) {
    if (condition || (condition === undefined)) {
-//      res.write(skin.getSubskin(macrotag.name));
       skin.render(skin.getSubskin(macrotag.name), context);
    }
 }

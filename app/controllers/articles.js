@@ -17,16 +17,16 @@ function index(req, res) {
 
    var context = {
       loginLink: function (macrotag, skin) {
-         renderSub(res, macrotag, skin, !getChecks(req).isSessionUser);
+         renderSub(macrotag, skin, !getChecks(req).isSessionUser);
       },
       registerLink: function (macrotag, skin) {
-         renderSub(res, macrotag, skin, !getChecks(req).isSessionUser);
+         renderSub(macrotag, skin, !getChecks(req).isSessionUser);
       },
       createArticleLink: function (macrotag, skin) {
-         renderSub(res, macrotag, skin, getChecks(req).isSessionUserAdmin);
+         renderSub(macrotag, skin, getChecks(req).isSessionUserAdmin);
       },
       logoutLink: function (macrotag, skin, context) {
-         renderSub(res, macrotag, skin, getChecks(req).isSessionUser, context);
+         renderSub(macrotag, skin, getChecks(req).isSessionUser, context);
       },
       listArticles: function (macrotag, skin) {
          renderList(items, skin);
