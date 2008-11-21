@@ -4,6 +4,11 @@ include('app.models.user');
 include('app.models.article');
 include('app.models.comment');
 
+export('handleDbTxn',
+       'createTestUser',
+       'createTestArticle',
+       'createTestComment');
+
 
 function handleDbTxn(testCase) {
    testCase.setUp = function () {

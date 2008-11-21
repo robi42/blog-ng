@@ -6,6 +6,14 @@ include('modules.validation');
 
 var {Post} = require('app.models.post');
 
+export('Article',
+       'createArticle',
+       'validateCreateArticle',
+       'updateArticle',
+       'validateUpdateArticle',
+       'deleteArticle',
+       'getArticlesFeed');
+
 
 function Article(props) {
 

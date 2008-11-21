@@ -7,6 +7,12 @@ include('modules.validation');
 var {Post} = require('app.models.post');
 include('app.models.article');
 
+export('Comment',
+       'createComment',
+       'validateCreateComment',
+       'deleteComment',
+       'getCommentsFeed');
+
 
 function Comment(props) {
 

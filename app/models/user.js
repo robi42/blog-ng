@@ -3,6 +3,13 @@ var db = require('helma.dbstore.orm');
 include('modules.model');
 include('modules.validation');
 
+export('User',
+       'createUser',
+       'validateCreateUser',
+       'deleteUser',
+       'loginUser',
+       'logoutUser',
+       'getSessionUser');
 
 function User(props) {
 

@@ -1,3 +1,5 @@
+export('Result');
+
 
 function Result(message, object) {
    this.msg = message;

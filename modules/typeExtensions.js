@@ -1,6 +1,6 @@
-var system = require('helma.system');
+import('helma.system', 'system');
 
-__shared__ = true;
+var __shared__ = true;
 
 
 var JDate = system.extendJavaClass(java.util.Date);

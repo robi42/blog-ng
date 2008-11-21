@@ -1,5 +1,10 @@
 var db = require('helma.dbstore.orm');
 
+export('validatePresenceOf',
+       'validateLengthOf',
+       'validateFormatOf',
+       'validateUniquenessOf');
+
 
 function validatePresenceOf(value, params) {
    if (!value) {
