@@ -30,8 +30,7 @@ function Comment(props) {
       return 'To Article: "' + articleTarget.title + '"';
    };
 
-   return new db.Storable(this, props);
-//   return this;
+   return db.makeStorable(this, props);
 }
 db.store.registerType(Comment);
 

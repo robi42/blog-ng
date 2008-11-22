@@ -23,7 +23,7 @@ How to Run the App
 
    Otherwise, e.g.:
 
-   blog-ng> java -jar ../helma-ng/run.jar startApp.js
+   blog-ng> java -jar run.jar ../helma-ng/run.jar startApp.js
 
 4. Then point your browser to:
 
@@ -39,7 +39,7 @@ How to Run the Unit Tests
 
    Resp., e.g.:
 
-   blog-ng> java -jar ../helma-ng/execTests.js
+   blog-ng> java -jar run.jar ../helma-ng/execTests.js
 
 
 How to Rebuild the DB Schema
@@ -51,7 +51,7 @@ How to Rebuild the DB Schema
 
    Resp., e.g.:
 
-   blog-ng> java -jar ../helma-ng/rebuildDb.js
+   blog-ng> java -jar run.jar ../helma-ng/rebuildDb.js
 
 Note: Keep in mind that this will delete any data stored in the DB.
 

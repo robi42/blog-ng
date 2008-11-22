@@ -13,8 +13,7 @@ export('User',
 
 function User(props) {
 
-   return new db.Storable(this, props);
-//   return this;
+   return db.makeStorable(this, props);
 }
 db.store.registerType(User);
 
